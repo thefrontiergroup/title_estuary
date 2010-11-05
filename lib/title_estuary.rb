@@ -116,7 +116,7 @@ module TitleEstuary
     
     # @return [String] a guess for the name of the requested resource.
     def page_title_singular_resource_name
-      params[:controller].singularize
+      params[:controller].singularize.split("/").last
     end
   
   end
